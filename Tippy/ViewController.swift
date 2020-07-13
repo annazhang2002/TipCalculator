@@ -30,10 +30,15 @@ class ViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         tipControl.selectedSegmentIndex = defaults.integer(forKey:"tipIndex")
+        if ((defaults.double(forKey: "billAmt")) != 0) {
+            billField.text = String(format: "$%.2f", (defaults.double(forKey: "billAmt")))
+        }
+        calculateTip(self)
     }
     @IBAction func calculateTip(_ sender: Any) {
         // get bill amount
         let bill = (Double) (billField.text!) ?? 0
+        defaults.set(bill, forKey: "billAmt")
         
         // calculate tip and total
         let tipPercentages = [0.1, 0.15, 0.2]
