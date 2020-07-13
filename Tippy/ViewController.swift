@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+//        billField.delegate = self
+        billField.becomeFirstResponder()
     }
     
     override func viewWillAppear(_ animated: Bool) {
