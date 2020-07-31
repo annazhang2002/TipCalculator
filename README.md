@@ -4,7 +4,7 @@
 
 Submitted by: **Anna**
 
-Time spent: **1** hours spent in total
+Time spent: **2** hours spent in total
 
 ## User Stories
 
@@ -14,26 +14,27 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [X] Settings page to change the default tip percentage.
-* [ ] UI animations
-* [ ] Remembering the bill amount across app restarts (if <10mins)
+* [X] UI animations
+* [X] Remembering the bill amount across app restarts
 * [ ] Using locale-specific currency and currency thousands separators.
-* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+* [X] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app functionality!
+- [X] User can enter the number of people they want to split the check between
+- [X] Number of people to split between is saved across app restarts
 
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Walkthough](walkthrough.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Overall, I had a great time making this initial iOS app. I ran into a bit of trouble trying to figure out to save the items to the defaults to maintain data across app restarts, but I figure out that I just wasn't setting the value early enough and the app was running into nil errors. Moreover, I had some trouble with the animations which were a bit tricky. However, once I got the hang of everything it was cool to be able to add my own features like entering the number of people you want to split between. 
 
 ## License
 

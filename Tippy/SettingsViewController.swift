@@ -13,18 +13,28 @@ class SettingsViewController: UIViewController {
     
     @IBOutlet weak var tipControl: UISegmentedControl!
     
+    @IBOutlet weak var splitNumControl: UITextField!
+    
+    @IBAction func onTap(_ sender: Any) {
+        view.endEditing(true)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         tipControl.selectedSegmentIndex = defaults.integer(forKey:"tipIndex")
+        splitNumControl.text = String(format: "%d", defaults.integer(forKey: "splitNum"))
     }
     @IBAction func setTipDefault(_ sender: Any) {
         defaults.set(tipControl.selectedSegmentIndex, forKey: "tipIndex")
         defaults.synchronize()
     }
     
-
+    @IBAction func setSplitNum(_ sender: Any) {
+        defaults.set(Int(splitNumControl.text!), forKey: "splitNum")
+        defaults.synchronize()
+    }
+    
     /*
     // MARK: - Navigation
 
