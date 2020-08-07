@@ -1,10 +1,6 @@
-# Pre-work - *Tippy*
+# *Tippy*
 
 **Tippy** is a tip calculator application for iOS.
-
-Submitted by: **Anna**
-
-Time spent: **2** hours spent in total
 
 ## User Stories
 
